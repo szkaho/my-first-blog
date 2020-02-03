@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>俳句生成サイト</title>
+        <!-- jQuery読み込み -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/haiku.js' %}"></script>
+    </head>
+    <body>
+        <header>俳句生成サイト</header>
+        <div class="inputArea">
+        <div><input id="fiveWord1" type="text">  <input class="random" type="button" value="ランダム生成"></div>
+        <div><input id="sevenWord" type="text">  <input class="randomSeven" type="button" value="ランダム生成"></div>
+        <div><input id="fiveWord2" type="text">  <input class="random" type="button" value="ランダム生成"></div>
+
+        <input class="post" type="button" value="投降">
+        </div>
+    </body>
+</html>

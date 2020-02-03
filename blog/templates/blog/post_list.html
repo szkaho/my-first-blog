@@ -9,5 +9,8 @@
         <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
+
+    <a href="{% url 'haiku' %}">俳句生成サイト</a>
+
 {% endfor %}
 {% endblock %}
